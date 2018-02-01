@@ -14,7 +14,7 @@ Provision for separate dev & production middleware.
 
 - Axios
 - React-sparklines
-- Redux-promise
+- Redux-thunk
 - Chai
 - Mocha
 - Webpack
