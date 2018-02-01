@@ -8,8 +8,10 @@ export const fetchWeather = (city) => {
     const url = `${ROOT_URL}&q=${city},us`
     const request = axios.get(url)
 
-    return {
-        type: types.FETCH_WEATHER,
-        payload: request
+    return dispatch => {
+        request.then(response => dispatch({
+            type: types.FETCH_WEATHER,
+            payload: response
+        }))
     }
 }

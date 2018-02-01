@@ -1,10 +1,10 @@
-import promise from 'redux-promise'
+import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 import { createStore, applyMiddleware } from 'redux'
 
 import rootReducer from './reducers/rootReducer'
 
-const middlewareProd = [ promise ]
+const middlewareProd = [ thunk ]
 
 const middlewareDev = [ ...middlewareProd, logger ]
 
