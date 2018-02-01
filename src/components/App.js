@@ -1,0 +1,18 @@
+import React, { Component } from 'react'
+
+import SearchBar from '../containers/SearchBar'
+import WeatherList from '../containers/WeatherList'
+
+export default class App extends Component {
+    render() {
+        return (
+            <div>
+                <div className="header">
+                    <h1 className="display-4">Search US Cities for Weather Graphs</h1>
+                </div>
+                <SearchBar />
+                <WeatherList />
+            </div>
+        )
+    }
+}
