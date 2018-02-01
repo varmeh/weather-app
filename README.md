@@ -6,6 +6,8 @@ Weather graphs for US Cities
 
 - Reactjs
 - Redux
+- Bootstrap
+- CSS3
 
 Uses a custom design of Redux store.
 Provision for separate dev & production middleware.
